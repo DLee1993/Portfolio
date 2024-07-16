@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+        --fs-sm: clamp(12.8px, 0.08vi + 12.48px, 13.5px);
+        --fs-base: clamp(16px, 0.23vi + 15.09px, 18px);
+        --fs-md: clamp(20px, 0.45vi + 18.18px, 23.99px);
+        --fs-lg: clamp(25px, 0.79vi + 21.83px, 31.98px);
+        --fs-xl: clamp(31.25px, 1.29vi + 26.08px, 42.63px);
+        --fs-xxl: clamp(39.06px, 2.02vi + 30.99px, 56.83px);
+        --fs-xxxl: clamp(48.83px, 3.06vi + 36.59px, 75.76px);
+    }
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* For browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+    :root {
+        --fs-sm: 12.8px;
+        --fs-base: 16px;
+        --fs-md: 20px;
+        --fs-lg: 25px;
+        --fs-xl: 31.25px;
+        --fs-xxl: 39.06px;
+        --fs-xxxl: 48.83px;
+    }
+    @media screen and (min-width: 1280px) {
+        :root {
+            --fs-sm: 13.5px;
+            --fs-base: 18px;
+            --fs-md: 23.99px;
+            --fs-lg: 31.98px;
+            --fs-xl: 42.63px;
+            --fs-xxl: 56.83px;
+            --fs-xxxl: 75.76px;
+        }
+    }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply bg-csBlack text-white;
+}
+
+header,
+main,
+footer {
+    padding: 0px 20px;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }

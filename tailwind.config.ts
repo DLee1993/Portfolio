@@ -15,6 +15,15 @@ const config: Config = {
             fontFamily: {
                 inter: "var(--font-inter)",
             },
+            fontSize: {
+                small: "var(--fs-sm)",
+                baseline: "var(--fs-base)",
+                medium: "var(--fs-md)",
+                large: "var(--fs-lg)",
+                xlarge: "var(--fs-xl)",
+                xxlarge: "var(--fs-xxl)",
+                xxxlarge: "var(--fs-xxxl)",
+            },
         },
     },
     plugins: [],
