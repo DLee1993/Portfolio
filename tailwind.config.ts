@@ -12,6 +12,9 @@ const config: Config = {
                 csBlack: "#0B0B0B",
                 csGrey: "#999999",
             },
+            fontFamily: {
+                inter: "var(--font-inter)",
+            },
         },
     },
     plugins: [],
