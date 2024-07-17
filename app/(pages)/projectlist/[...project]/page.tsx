@@ -1,7 +1,12 @@
-export default function page() {
+"use client";
+
+import { useParams } from "next/navigation";
+export default function Page() {
+    const { project } = useParams();
+
     return (
         <section>
-            <p>individual project</p>
+            <p>{project}</p>
         </section>
     );
 }
