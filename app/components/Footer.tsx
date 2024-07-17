@@ -3,7 +3,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <footer className="px-5 py-2 flex justify-between items-center">
+        <footer className="p-5 flex justify-between items-center text-small sm:text-base">
             <ul className="flex gap-4">
                 <li>
                     <Link href="#">tw</Link>
