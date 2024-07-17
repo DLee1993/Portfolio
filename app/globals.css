@@ -42,10 +42,12 @@ body {
     @apply bg-csBlack text-white;
 }
 
-header,
-main,
-footer {
-    padding: 0px 20px;
+body::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
 }
 
 @layer utilities {
