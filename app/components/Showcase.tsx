@@ -29,7 +29,7 @@ function Showcase() {
         <section className="px-5">
             <p className="text-right text-small sm:text-base mb-3">Featured work</p>
 
-            <section className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-1">
+            <section className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-y-2 sm:gap-x-2">
                 <article
                     id="showcaseProject"
                     className="col-span-2 relative overflow-hidden w-full h-96 group rounded-t-lg"
@@ -44,7 +44,7 @@ function Showcase() {
                         />
                     </figure>
                     <Link
-                        href="#"
+                        href="/projectlist/scribblepad"
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center items-center w-40 h-40 backdrop-blur-md rounded-full bg-white/50 text-csBlack scale-0 group-hover:scale-100 transition-transform"
                     >
                         view project
@@ -64,7 +64,7 @@ function Showcase() {
                         />
                     </figure>
                     <Link
-                        href="#"
+                        href="/projectlist/healthcare"
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center items-center w-40 h-40 backdrop-blur-md rounded-full bg-white/50 text-csBlack scale-0 group-hover:scale-100 transition-transform"
                     >
                         view project
@@ -84,7 +84,7 @@ function Showcase() {
                         />
                     </figure>
                     <Link
-                        href="#"
+                        href="/projectlist/digitaldictionary"
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center items-center w-40 h-40 backdrop-blur-md rounded-full bg-white/50 text-csBlack scale-0 group-hover:scale-100 transition-transform"
                     >
                         view project
@@ -104,7 +104,7 @@ function Showcase() {
                         />
                     </figure>
                     <Link
-                        href="#"
+                        href="/projectlist/galleria"
                         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex justify-center items-center w-40 h-40 backdrop-blur-md rounded-full bg-white/50 text-csBlack scale-0 group-hover:scale-100 transition-transform"
                     >
                         view project
