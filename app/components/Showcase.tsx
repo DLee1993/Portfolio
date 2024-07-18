@@ -5,12 +5,12 @@ import Link from "next/link";
 function Showcase() {
     return (
         <section className="px-5">
-            <p className="text-right text-small sm:text-base mb-3">Featured work</p>
+            <p className="text-right text-small mb-3">Featured work</p>
 
             <section className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-y-2 sm:gap-x-2">
                 <article
                     id="showcaseProject"
-                    className="col-span-2 relative overflow-hidden w-full h-96 group rounded-t-lg"
+                    className="col-span-2 relative overflow-hidden w-full h-[40rem] group rounded-t-lg"
                 >
                     <figure>
                         <Image
@@ -30,7 +30,7 @@ function Showcase() {
                 </article>
                 <article
                     id="showcaseProject"
-                    className="row-start-2 relative overflow-hidden w-full h-96 group"
+                    className="row-start-2 relative overflow-hidden w-full group"
                 >
                     <figure>
                         <Image
@@ -50,7 +50,7 @@ function Showcase() {
                 </article>
                 <article
                     id="showcaseProject"
-                    className="row-start-3 sm:row-start-2 relative overflow-hidden w-full h-96 group"
+                    className="row-start-3 sm:row-start-2 relative overflow-hidden w-full group"
                 >
                     <figure>
                         <Image
@@ -70,7 +70,7 @@ function Showcase() {
                 </article>
                 <article
                     id="showcaseProject"
-                    className="col-span-2 relative overflow-hidden w-full h-96 group rounded-b-lg"
+                    className="col-span-2 relative overflow-hidden w-full h-[40rem] group rounded-b-lg"
                 >
                     <figure>
                         <Image
