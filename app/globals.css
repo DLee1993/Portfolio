@@ -51,6 +51,12 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
 
+@layer components {
+    .active {
+        @apply bg-white text-csBlack rounded-full;
+    }
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
