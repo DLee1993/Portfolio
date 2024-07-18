@@ -1,4 +1,4 @@
-import projectList from "@/app/data.json";
+import projectList from "../../data.json";
 
 export default async function page() {
     return (
