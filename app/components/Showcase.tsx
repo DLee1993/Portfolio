@@ -1,30 +1,8 @@
-// "use client";
-
 import Image from "next/image";
 import scribblepad from "@/public/scribblePad.webp";
 import Link from "next/link";
-// import { inView, animate } from "framer-motion";
-// import { useEffect } from "react";
 
 function Showcase() {
-    // useEffect(() => {
-    //     const articles = document.querySelectorAll("article");
-
-    //     articles.forEach((article) => {
-    //         inView(
-    //             article,
-    //             () => {
-    //                 const link = article.querySelector("a") as HTMLAnchorElement;
-
-    //                 animate(link, { scale: 1 });
-
-    //                 return () => animate(link, { scale: 0 });
-    //             },
-    //             { amount: "all" }
-    //         );
-    //     });
-    // });
-
     return (
         <section className="px-5">
             <p className="text-right text-small sm:text-base mb-3">Featured work</p>
