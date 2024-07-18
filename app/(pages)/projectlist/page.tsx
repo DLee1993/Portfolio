@@ -6,7 +6,7 @@ type ProjectObject = {
 };
 
 export default async function page() {
-    const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
+    const file = await fs.readFile(process.cwd() + "data.json", "utf8");
     const data = JSON.parse(file);
     return (
         <section>
