@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
 
 export const metadata: Metadata = {
     title: "David Lee | Portfolio",
@@ -25,10 +19,13 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/faviconPNG.png" />
             </head>
-            <body className={poppins.className}>
-                <Header />
+            <body>
+                <header>
+                    <a href="/info">info</a>
+                    <a href="/">home</a>
+                </header>
                 <main>{children}</main>
-                <Footer />
+                <footer>footer content</footer>
             </body>
         </html>
     );

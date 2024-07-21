@@ -9,8 +9,9 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                csBlack: "#0B0B0B",
-                csGrey: "#999999",
+                csBlack: "#101010",
+                csWhite: "#F2F2F2",
+                csFadedWhite: "rgba(242,242,242, 0.5)",
             },
             fontFamily: {
                 inter: "var(--font-inter)",
