@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -17,13 +18,10 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${inter.variable}`}>
             <head>
-                <link rel="icon" href="/faviconPNG.png" />
+                <link rel="icon" href="/favicon.webp" />
             </head>
-            <body>
-                <header>
-                    <a href="/info">info</a>
-                    <a href="/">home</a>
-                </header>
+            <body className="h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/5 to-csBlack bg-no-repeat min-h-screen">
+                <Header />
                 <main>{children}</main>
                 <footer>footer content</footer>
             </body>
