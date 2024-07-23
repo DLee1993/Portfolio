@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -20,10 +21,11 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.webp" />
             </head>
-            <body className="h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/5 to-csBlack bg-no-repeat min-h-screen">
+            <body className="relative min-h-screen">
+                <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b md:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/10 to-csBlack bg-no-repeat"></div>
                 <Header />
-                <main>{children}</main>
-                <footer>footer content</footer>
+                <main className="customPadding">{children}</main>
+                <Footer />
             </body>
         </html>
     );
