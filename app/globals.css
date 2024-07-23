@@ -38,15 +38,8 @@
     }
 }
 
-a {
-    padding: 10px 15px;
-    background-color: aqua;
-    color: black;
-    margin: 10px;
-}
-
 body {
-    @apply bg-csBlack text-csWhite font-inter;
+    @apply bg-csBlack text-csWhite font-inter px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
 }
 
 body::-webkit-scrollbar {
