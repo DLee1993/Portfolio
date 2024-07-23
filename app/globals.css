@@ -39,7 +39,7 @@
 }
 
 body {
-    @apply bg-csBlack text-csWhite font-inter px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
+    @apply bg-csBlack text-csWhite font-inter;
 }
 
 body::-webkit-scrollbar {
@@ -54,6 +54,9 @@ body::-webkit-scrollbar-thumb {
 @layer components {
     .active {
         @apply bg-white text-csBlack rounded-full;
+    }
+    .customPadding {
+        @apply px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
     }
 }
 
