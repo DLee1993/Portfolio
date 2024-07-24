@@ -15,7 +15,7 @@ const config: Config = {
                 csPurple: "#432B89",
                 csGreen: "#254441",
                 csBlue: "#102542",
-                csRed: "#621B00",
+                csRed: "#FF0000",
                 csOrange: "#FF6B00",
             },
             fontFamily: {
