@@ -53,10 +53,23 @@ body::-webkit-scrollbar-thumb {
 
 @layer components {
     .active {
-        @apply bg-white text-csBlack rounded-full;
+        @apply bg-white text-csBlack;
     }
+
     .customPadding {
         @apply px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
+    }
+
+    .menuLink {
+        @apply w-28 grid place-items-center rounded-full hover:bg-csWhite/10 transition-colors;
+    }
+
+    .menuLink a {
+        @apply w-full h-full py-2 grid place-items-center rounded-full;
+    }
+
+    .menuLink.active {
+        @apply hover:!bg-csWhite;
     }
 }
 
