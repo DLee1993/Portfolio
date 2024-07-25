@@ -50,13 +50,13 @@ export default function Showcase() {
                                     <LuExternalLink size="1.2rem" />
                                 </span>
                             </section>
-                            <figure className="relative min-h-[450px] w-full md:w-11/12 mx-auto rounded-lg md:rounded-3xl">
+                            <figure className="relative min-h-[450px] w-full md:w-11/12 mx-auto rounded-t-lg md:rounded-t-xl overflow-hidden">
                                 <Image
                                     src={project.image}
                                     alt="project image"
                                     fill={true}
                                     objectFit="cover"
-                                    className="rounded-t-lg md:rounded-t-xl group-hover:scale-105 group-focus-visible:scale-105 transition-all duration-500"
+                                    className="group-hover:scale-105 group-focus-visible:scale-105 transition-all duration-500"
                                 />
                             </figure>
                         </section>
