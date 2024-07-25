@@ -23,7 +23,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.webp" />
             </head>
             <body className="relative min-h-screen">
-                <div className="absolute top-0 left-0 w-full h-screen bg-gradient-to-b md:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/10 to-csBlack bg-no-repeat"></div>
+                <div className="absolute -z-50 top-0 left-0 w-full h-screen bg-gradient-to-b md:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/10 to-csBlack bg-no-repeat"></div>
                 <FloatingNav />
                 <Header />
                 <main className="customPadding">{children}</main>
