@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { text } from "stream/consumers";
+import ContactForm from "./ContactForm";
 
 export default function Footer() {
     const socials = [
@@ -26,9 +27,7 @@ export default function Footer() {
                         If you would like to discuess my portfolio further or discuss potential
                         employment, please click the button below to get in touch
                     </p>
-                    <button className="py-2 px-4 bg-white text-csBlack rounded-full mt-10 border-2 border-csWhite hover:bg-csBlack hover:text-csWhite transition-colors">
-                        Get in touch
-                    </button>
+                    <ContactForm />
                 </article>
                 <ul className="capitalize flex flex-col gap-y-2">
                     <li className="text-csFadedWhite mb-3">Digital connections</li>
