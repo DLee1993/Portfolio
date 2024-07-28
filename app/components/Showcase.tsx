@@ -7,12 +7,12 @@ export default function Showcase() {
     return (
         <ul className="space-y-10 md:space-y-20">
             {projects.map((project, index) => (
-                <li key={`project-${0 + index}`} className="w-full md:w-11/12 max-w-5xl mx-auto">
+                <li key={`project-${0 + index}`} className="w-full md:w-11/12 max-w-5xl mx-auto group">
                     <Link
                         href={project.href}
                         target="_blank"
                         id="project"
-                        className="relative block p-2 rounded-xl md:rounded-3xl bg-csWhite/5 overflow-hidden group"
+                        className="relative block p-2 rounded-xl md:rounded-3xl bg-csWhite/5 overflow-hidden"
                         aria-label={`This is a link to the personal project ${project.title}`}
                     >
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-radial from-csWhite/60 via-csBlack/10 to-transparent"></div>
