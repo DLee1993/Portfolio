@@ -10,7 +10,7 @@ export default function Page() {
 
     useGSAP(
         () => {
-            gsap.to("section", { opacity: 1, y: 0, stagger: 0.025 });
+            gsap.to("section", { opacity: 1, y: 0, stagger: 0.05 });
         },
         { scope: container }
     );
