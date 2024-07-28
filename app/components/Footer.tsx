@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ImArrowUpRight2 } from "react-icons/im";
-import { text } from "stream/consumers";
 import ContactForm from "./ContactForm";
 
 export default function Footer() {
