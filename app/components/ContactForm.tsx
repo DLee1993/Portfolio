@@ -62,7 +62,7 @@ export default function ContactForm() {
                 ) : formError.bool ? (
                     `${formError.message}`
                 ) : (
-                    <form id="form" className="w-full" onSubmit={handleSubmit(processForm)}>
+                    <form id="form" className="w-full text-sm" onSubmit={handleSubmit(processForm)}>
                         <fieldset className="w-full flex flex-col sm:flex-row justify-between items-center gap-x-2 mb-5">
                             <fieldset>
                                 <label htmlFor="name">Full name</label>
@@ -71,7 +71,7 @@ export default function ContactForm() {
                                     placeholder={
                                         errors?.user_name
                                             ? `${errors?.user_name?.message}`
-                                            : "Enter your name"
+                                            : "Enter your name *"
                                     }
                                     className={`${
                                         errors.user_name
@@ -90,7 +90,7 @@ export default function ContactForm() {
                                     placeholder={
                                         errors?.user_email
                                             ? `${errors?.user_email?.message}`
-                                            : "Enter your email"
+                                            : "Enter your email address *"
                                     }
                                     className={errors.user_email && "placeholder:text-csRed"}
                                     autoComplete="true"
@@ -105,7 +105,7 @@ export default function ContactForm() {
                                     placeholder={
                                         errors?.user_company
                                             ? `${errors?.user_company?.message}`
-                                            : "Who do you work for?"
+                                            : "Enter your company name *"
                                     }
                                     className={errors.user_company && "placeholder:text-csRed"}
                                     {...register("user_company")}
@@ -120,7 +120,7 @@ export default function ContactForm() {
                                 placeholder={
                                     errors?.message
                                         ? `${errors?.message?.message}`
-                                        : "What would you like to say?"
+                                        : "What would you like to say? *"
                                 }
                                 className={errors.message && "placeholder:text-csRed"}
                                 {...register("message")}
