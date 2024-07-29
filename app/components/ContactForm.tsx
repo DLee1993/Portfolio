@@ -31,10 +31,15 @@ export default function ContactForm() {
         if (!canSave) return;
 
         emailjs
-            .sendForm("service_tcs5k1e", "contact_form", "#form", {
-                publicKey: "TfFxJ4tLfWO6qwoQi",
-                limitRate: { throttle: 60000 },
-            })
+            .sendForm(
+                `${process.env.NEXT_PUBLIC_EMAILJS_SERVID}`,
+                `${process.env.NEXT_PUBLIC_EMAILJS_TEMPID}`,
+                "#form",
+                {
+                    publicKey: `${process.env.NEXT_PUBLIC_EMAILJS_PUBKEY}`,
+                    // limitRate: { throttle: 60000 },
+                }
+            )
             .then(
                 () => {
                     // console.log("SUCCESS!");
@@ -42,7 +47,7 @@ export default function ContactForm() {
                 },
                 (error) => {
                     // console.log("FAILED...", error.text);
-                    setFormError({ bool: true, message: error.text });
+                    setFormError({ bool: true, message: "ERROR: " + error.text });
                 }
             );
     };

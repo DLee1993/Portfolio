@@ -28,7 +28,7 @@ export default function Header() {
                     </Link>
                 </li>
                 <li className="group">
-                    <Link href="#" className="flex justify-center items-center gap-x-1">
+                    <Link href="/contact" className="flex justify-center items-center gap-x-1">
                         contact{" "}
                         <ImArrowUpRight2
                             size="0.75rem"
