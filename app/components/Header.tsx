@@ -10,8 +10,17 @@ export default function Header() {
             </div>
             <ul className="flex justify-center items-center gap-x-5 capitalize text-sm">
                 <li className="group">
-                    <Link href="#" className="flex justify-center items-center gap-x-1">
-                        linkedin{" "}
+                    <Link href="#" className="hidden sm:flex justify-center items-center gap-x-1">
+                        resume{" "}
+                        <ImArrowUpRight2
+                            size="0.75rem"
+                            className="group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-all"
+                        />
+                    </Link>
+                </li>
+                <li className="group">
+                    <Link href="#" className="hidden sm:flex justify-center items-center gap-x-1">
+                        github{" "}
                         <ImArrowUpRight2
                             size="0.75rem"
                             className="group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-all"
@@ -20,7 +29,7 @@ export default function Header() {
                 </li>
                 <li className="group">
                     <Link href="#" className="flex justify-center items-center gap-x-1">
-                        github{" "}
+                        contact{" "}
                         <ImArrowUpRight2
                             size="0.75rem"
                             className="group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-all"
