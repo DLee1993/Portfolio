@@ -51,6 +51,42 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
 
+fieldset {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    background: transparent;
+    border-bottom: 2px solid rgba(242, 242, 242, 0.1);
+    color: rgb(242, 242, 242);
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+    padding: 16px;
+    background: transparent;
+    border: 2px solid rgba(242, 242, 242, 0.1);
+    color: rgb(242, 242, 242);
+}
+
 @layer components {
     .customPadding {
         @apply px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
