@@ -7,7 +7,7 @@ export default function Showcase() {
     return (
         <ul className="space-y-10 md:space-y-20">
             {projects.map((project, index) => (
-                <li key={`project-${0 + index}`} className="w-full md:w-11/12 max-w-5xl mx-auto group">
+                <li key={`project-${0 + index}`} className="w-full md:w-11/12 max-w-4xl mx-auto group">
                     <Link
                         href={project.href}
                         target="_blank"
