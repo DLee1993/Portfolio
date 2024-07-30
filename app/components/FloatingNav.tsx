@@ -18,7 +18,7 @@ export default function FloatingNav() {
                     {pathname === link && (
                         <motion.div
                             layoutId="active-pill"
-                            style={{originY: "0px"}}
+                            style={{ originY: "0px" }}
                             className="absolute w-full h-full py-2 bg-white text-csBlack rounded-full -z-50"
                         ></motion.div>
                     )}
@@ -27,6 +27,7 @@ export default function FloatingNav() {
                         className={`w-full h-full py-2 grid place-items-center rounded-full ${
                             pathname === link && "text-csBlack"
                         }`}
+                        scroll={false}
                     >
                         {link === "/" ? "case studies" : `${link.split("/")[1]}`}
                     </Link>
