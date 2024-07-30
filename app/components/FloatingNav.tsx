@@ -27,7 +27,6 @@ export default function FloatingNav() {
                         className={`w-full h-full py-2 grid place-items-center rounded-full ${
                             pathname === link && "text-csBlack"
                         }`}
-                        scroll={false}
                     >
                         {link === "/" ? "case studies" : `${link.split("/")[1]}`}
                     </Link>
