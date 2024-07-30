@@ -17,7 +17,7 @@ export default function Page() {
 
     return (
         <section ref={container} className="flex flex-col items-center gap-y-20">
-            <section className="flex justify-center items-center min-h-[45vh] opacity-0 translate-y-10">
+            <section className="flex justify-center items-center min-h-[30vh] sm:min-h-[45vh] opacity-0 translate-y-10">
                 <h1 className="max-w-md md:max-w-lg lg:max-w-2xl flex flex-col justify-center items-center md:items-end gap-y-4">
                     <span className="tracking-tighter text-xl md:text-2xl lg:text-3xl text-center">
                         I build accessible, modern web apps to help streamline the needs of people
