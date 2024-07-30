@@ -89,7 +89,7 @@ textarea {
 
 @layer components {
     .customPadding {
-        @apply px-5 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
+        @apply px-3 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
     }
 
     #challengeList::-webkit-scrollbar {
