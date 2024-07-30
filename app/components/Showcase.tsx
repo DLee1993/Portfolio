@@ -26,11 +26,11 @@ export default function Showcase() {
                                         : index === 1
                                         ? "from-csPurple/50"
                                         : index === 2
-                                        ? "from-csBlue/75"
+                                        ? "from-csBlue/85"
                                         : index === 3
-                                        ? "from-csRed/30"
-                                        : "from-csOrange/50"
-                                } to-csBlack/10 md:border-[1px] border-csWhite rounded-xl md:rounded-3xl md:opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-500`}
+                                        ? "from-csRed/20"
+                                        : "from-csOrange/30"
+                                } to-csBlack/10 rounded-xl md:rounded-3xl md:opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-500`}
                             ></div>
                             <section className="relative z-50 flex justify-between items-start mb-10 px-2 sm:px-5 md:px-10">
                                 <article>
