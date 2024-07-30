@@ -67,7 +67,7 @@ export default function ContactForm() {
                 ) : formError.bool ? (
                     `${formError.message}`
                 ) : (
-                    <form id="form" className="w-full text-sm" onSubmit={handleSubmit(processForm)}>
+                    <form id="form" className="w-full" onSubmit={handleSubmit(processForm)}>
                         <fieldset className="w-full flex flex-col sm:flex-row justify-between items-center gap-x-2 mb-5">
                             <fieldset>
                                 <label htmlFor="name">Full name</label>
