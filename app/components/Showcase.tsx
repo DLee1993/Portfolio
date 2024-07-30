@@ -34,10 +34,10 @@ export default function Showcase() {
                             ></div>
                             <section className="relative z-50 flex justify-between items-start mb-10 px-2 sm:px-5 md:px-10">
                                 <article>
-                                    <h2 className="text-2xl font-semibold tracking-tighter">
+                                    <h2 className="text-xl font-semibold tracking-tighter">
                                         {project.title}
                                     </h2>
-                                    <p className="text-base text-csFadedWhite tracking-tighter mb-4">
+                                    <p className="text-sm text-csFadedWhite tracking-tighter mb-4">
                                         {project.content}
                                     </p>
                                     <ul className="flex flex-wrap gap-x-4 text-sm tracking-tighter">
