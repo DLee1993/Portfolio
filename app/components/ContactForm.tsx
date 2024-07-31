@@ -70,11 +70,7 @@ export default function ContactForm() {
                                         ? `${errors?.user_name?.message}`
                                         : "Enter your name *"
                                 }
-                                className={`${
-                                    errors.user_name
-                                        ? "placeholder:text-csRed"
-                                        : "placeholder:text-csFadedWhite"
-                                }`}
+                                className={`${errors.user_name && "placeholder:text-csRed"}`}
                                 autoComplete="true"
                                 {...register("user_name")}
                             />

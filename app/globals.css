@@ -92,12 +92,12 @@ textarea {
         @apply px-3 sm:px-7 md:px-9 lg:px-11 xl:px-14 2xl:px-16;
     }
 
-    #challengeList::-webkit-scrollbar {
+    #biography::-webkit-scrollbar {
         background-color: transparent;
         width: 5px;
     }
 
-    #challengeList::-webkit-scrollbar-thumb {
+    #biography::-webkit-scrollbar-thumb {
         background-color: rgba(242, 242, 242, 0.5);
         border-radius: 50px;
     }
