@@ -9,11 +9,11 @@ export default function FloatingNav() {
     const links = ["/", "/info"];
 
     return (
-        <menu className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-fit h-12 flex justify-between items-center gap-x-2 sm:gap-x-3 md:gap-x-4 p-2 text-xs sm:text-sm capitalize bg-csBlack/65 border-2 border-csWhite/5 backdrop-blur-md rounded-full">
+        <menu className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-fit h-12 flex justify-between items-center gap-x-2 sm:gap-x-3 p-1 text-xs sm:text-sm capitalize bg-csBlack/65 border-2 border-csWhite/5 backdrop-blur-md rounded-full">
             {links.map((link, index) => (
                 <li
                     key={index}
-                    className="relative w-28 grid place-items-center rounded-full hover:bg-csWhite/10 transition-colors;"
+                    className="relative w-24 grid place-items-center rounded-full hover:bg-csWhite/10 transition-colors;"
                 >
                     {pathname === link && (
                         <motion.div
@@ -28,7 +28,7 @@ export default function FloatingNav() {
                             pathname === link && "text-csBlack"
                         }`}
                     >
-                        {link === "/" ? "case studies" : `${link.split("/")[1]}`}
+                        {link === "/" ? "projects" : `${link.split("/")[1]}`}
                     </Link>
                 </li>
             ))}
