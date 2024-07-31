@@ -13,7 +13,7 @@ export default function FloatingNav() {
             {links.map((link, index) => (
                 <li
                     key={index}
-                    className="relative w-24 grid place-items-center rounded-full hover:bg-csWhite/10 transition-colors;"
+                    className="relative w-24 grid place-items-center rounded-full hover:bg-csWhite/5 transition-colors;"
                 >
                     {pathname === link && (
                         <motion.div
