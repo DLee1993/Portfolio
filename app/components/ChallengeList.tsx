@@ -32,7 +32,7 @@ export default function ChallengeList() {
     return (
         <section className="my-10">
             <section className="mt-20 mb-1">
-                <ul className="flex justify-evenly sm:justify-start items-center gap-x-2 py-2 px-1 bg-csWhite/5 border-2 border-csWhite/5 backdrop-blur-md rounded-md">
+                <ul className="flex justify-start items-center gap-x-2 py-2 px-1 bg-csWhite/5 border-2 border-csWhite/5 backdrop-blur-md rounded-md">
                     {filters.map((filter, index) => (
                         <li
                             onClick={() => setSelected(filter)}
