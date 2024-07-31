@@ -36,7 +36,7 @@ export default function Page() {
             <Link
                 href="https://github.com/DLee1993"
                 target="_blank"
-                className="py-2 px-4 w-fit bg-white text-csBlack rounded-md border-2 border-csWhite hover:bg-csBlack hover:text-csWhite transition-colors"
+                className="py-1 px-2 text-sm w-fit bg-white text-csBlack rounded-md border-2 border-csWhite hover:bg-csBlack hover:text-csWhite transition-colors"
             >
                 View all
             </Link>
