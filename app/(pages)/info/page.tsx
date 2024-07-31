@@ -44,7 +44,7 @@ export default function Page() {
                             I am passionate about building pixel-perfect, engaging, and accessible
                             digital experiences.
                         </h3>
-                        <p className="mt-10">
+                        <p className="mt-10 text-csWhite/75">
                             I&apos;ve always been interested in technology and have dabbled in
                             website development, but I never had the confidence to pursue it as a
                             job until I was 30. I felt it was now or never, so I started researching
@@ -53,11 +53,11 @@ export default function Page() {
                             expanding my knowledge and understanding of the key technologies in web
                             development. Having a deeper understanding of the these technologies has
                             helped me to integrate and use the current technologies more
-                            efficiently. My current favourite technologies are React, NextJs,
+                            efficiently. My current technologies is use are React, NextJs,
                             Tailwind CSS, ShadcnUI, and Typescript.
                         </p>
                         <br />
-                        <p>
+                        <p className="text-csWhite/75">
                             As of today, I am simply developing, whether it is typesafe components
                             or entire web applications. The pursuit of pixel-perfect, easily
                             accessible digital experiences continues.
