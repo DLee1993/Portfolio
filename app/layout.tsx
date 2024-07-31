@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FloatingNav from "./components/FloatingNav";
+import Scroll from "./components/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
             <head>
                 <link rel="icon" href="/favicon.webp" />
             </head>
+            <Scroll />
             <body className="relative min-h-screen">
                 <div className="absolute -z-50 top-0 left-0 w-full h-screen bg-gradient-to-b md:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/10 to-csBlack bg-no-repeat"></div>
                 <FloatingNav />
