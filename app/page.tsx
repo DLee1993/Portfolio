@@ -1,8 +1,10 @@
 "use client";
+
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Showcase from "./components/Showcase";
+import Link from "next/link";
 gsap.registerPlugin(useGSAP);
 
 export default function Page() {
@@ -31,6 +33,13 @@ export default function Page() {
             <section className="opacity-0 translate-y-10 w-full">
                 <Showcase />
             </section>
+            <Link
+                href="https://github.com/DLee1993"
+                target="_blank"
+                className="py-2 px-4 w-fit bg-white text-csBlack rounded-md border-2 border-csWhite hover:bg-csBlack hover:text-csWhite transition-colors"
+            >
+                View all
+            </Link>
         </section>
     );
 }
