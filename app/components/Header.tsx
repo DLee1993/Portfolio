@@ -10,7 +10,7 @@ export default function Header() {
             </div>
             <ul className="flex justify-center items-center gap-x-5 capitalize text-sm">
                 <li className="group">
-                    <Link href="#" className="hidden sm:flex justify-center items-center gap-x-1">
+                    <Link href="/Resume.docx" locale={false} className="hidden sm:flex justify-center items-center gap-x-1">
                         resume{" "}
                         <ImArrowUpRight2
                             size="0.75rem"
@@ -19,7 +19,10 @@ export default function Header() {
                     </Link>
                 </li>
                 <li className="group">
-                    <Link href="#" className="hidden sm:flex justify-center items-center gap-x-1">
+                    <Link
+                        href="https://github.com/DLee1993"
+                        className="hidden sm:flex justify-center items-center gap-x-1"
+                    >
                         github{" "}
                         <ImArrowUpRight2
                             size="0.75rem"

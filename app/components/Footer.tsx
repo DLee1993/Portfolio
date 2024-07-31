@@ -9,15 +9,15 @@ export default function Footer() {
 
     const socials = [
         {
-            href: "https://www.google.com",
+            href: "https://github.com/DLee1993",
             textContent: "github",
         },
         {
-            href: "https://www.google.com",
+            href: "https://discord.com/users/706100204960612443",
             textContent: "discord",
         },
         {
-            href: "https://www.google.com",
+            href: "https://www.frontendmentor.io/profile/DLee1993",
             textContent: "frontend mentor",
         },
     ];
