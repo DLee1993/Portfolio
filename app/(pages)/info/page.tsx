@@ -13,7 +13,7 @@ export default function Page() {
         <section className="relative flex flex-col md:flex-row gap-y-4 md:gap-x-10">
             <aside className="sticky top-0 border-b-2 md:border-none border-csFadedWhite/10 py-4 min-w-36">
                 <h3 className="text-csFadedWhite hidden md:block text-sm">Index</h3>
-                <ul className="mt-5 flex flex-row md:flex-col gap-x-2 md:gap-y-2">
+                <ul className="mt-5 flex flex-row md:flex-col gap-x-4 md:gap-y-2">
                     <li
                         onClick={() => updateTabs(1)}
                         className={`cursor-pointer ${
@@ -39,7 +39,7 @@ export default function Page() {
                     id="biography"
                     className={tab === 1 ? "block" : "hidden"}
                 >
-                    <article className="w-4/5 mx-auto">
+                    <article className="md:w-4/5 md:mx-auto">
                         <h3 className="text-2xl w-5/6 font-semibold">
                             I am passionate about building pixel-perfect, engaging, and accessible
                             digital experiences.
@@ -70,7 +70,7 @@ export default function Page() {
                     id="resume"
                     className={tab === 2 ? "block" : "hidden"}
                 >
-                    <article className="w-3/4 mx-auto">
+                    <article className="md:w-4/5 md:mx-auto">
                         <h3 className="text-2xl w-5/6 font-semibold">Curriculum vitae</h3>
                         <p className="mt-10">resume content</p>
                     </article>
