@@ -16,7 +16,7 @@ export default function Page() {
                 <ul className="mt-5 flex flex-row md:flex-col gap-x-4 md:gap-y-2">
                     <li
                         onClick={() => updateTabs(1)}
-                        className={`cursor-pointer ${
+                        className={`cursor-pointer w-fit ${
                             tab === 1 ? "text-csWhite" : "text-csFadedWhite/35"
                         }`}
                     >
@@ -24,7 +24,7 @@ export default function Page() {
                     </li>
                     <li
                         onClick={() => updateTabs(2)}
-                        className={`cursor-pointer ${
+                        className={`cursor-pointer w-fit ${
                             tab === 2 ? "text-csWhite" : "text-csFadedWhite/35"
                         }`}
                     >
