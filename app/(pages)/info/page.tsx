@@ -11,7 +11,7 @@ export default function Page() {
     };
     return (
         <section className="relative flex flex-col md:flex-row gap-y-4 md:gap-x-10">
-            <aside className="sticky top-0 border-b-2 md:border-none border-csFadedWhite/10 py-4 min-w-36">
+            <aside className="border-b-2 md:border-none border-csFadedWhite/10 py-4 min-w-36">
                 <h3 className="text-csFadedWhite hidden md:block text-sm">Index</h3>
                 <ul className="mt-5 flex flex-row md:flex-col gap-x-4 md:gap-y-2">
                     <li
