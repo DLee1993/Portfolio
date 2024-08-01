@@ -40,7 +40,7 @@ export default function Page() {
                     className={tab === 1 ? "block" : "hidden"}
                 >
                     <article className="md:w-4/5 md:mx-auto">
-                        <h3 className="text-xl md:text-2xl w-5/6 font-semibold">
+                        <h3 className="w-full text-xl md:text-2xl tracking-tight font-semibold">
                             I am passionate about building pixel-perfect, engaging, and accessible
                             digital experiences.
                         </h3>
@@ -71,7 +71,7 @@ export default function Page() {
                     className={tab === 2 ? "block" : "hidden"}
                 >
                     <article className="md:w-4/5 md:mx-auto">
-                        <h3 className="text-xl md:text-2xl w-5/6 font-semibold">Curriculum vitae</h3>
+                        <h3 className="w-full text-xl md:text-2xl tracking-tight font-semibold">Curriculum vitae</h3>
                         <p className="mt-10">resume content</p>
                     </article>
                 </motion.section>
