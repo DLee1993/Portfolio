@@ -9,6 +9,31 @@ export default function Page() {
     const updateTabs = (id: number) => {
         setTab(id);
     };
+
+    const ResumeDetails = [
+        {
+            title: "Name",
+            content: "David Lee",
+        },
+        {
+            title: "Position",
+            content: "Frontend Developer",
+        },
+        {
+            title: "About me",
+            content:
+                "Detail oriented and driven developer that builds responsive modern looking websites. Eager to learn in a fast-paced environment for professional and personal improvement. Looking for opportunity where I can challenge myself and grow in my skills to create quality solutions.",
+        },
+        {
+            title: "Projects",
+            content: "",
+        },
+        {
+            title: "Tech Stack",
+            content: "",
+        },
+    ];
+
     return (
         <section className="relative flex flex-col md:flex-row gap-y-4 md:gap-x-10">
             <aside className="border-b-2 md:border-none border-csFadedWhite/10 py-4 min-w-36">
@@ -53,8 +78,8 @@ export default function Page() {
                             expanding my knowledge and understanding of the key technologies in web
                             development. Having a deeper understanding of the these technologies has
                             helped me to integrate and use the current technologies more
-                            efficiently. My current technologies is use are React, NextJs,
-                            Tailwind CSS, ShadcnUI, and Typescript.
+                            efficiently. My current technologies is use are React, NextJs, Tailwind
+                            CSS, ShadcnUI, and Typescript.
                         </p>
                         <br />
                         <p className="text-csWhite/75">
@@ -71,8 +96,20 @@ export default function Page() {
                     className={tab === 2 ? "block" : "hidden"}
                 >
                     <article className="md:w-4/5 md:mx-auto">
-                        <h3 className="w-full text-xl md:text-2xl tracking-tight font-semibold">Curriculum vitae</h3>
-                        <p className="mt-10">resume content</p>
+                        <h3 className="w-full text-xl md:text-2xl tracking-tight font-semibold">
+                            Resume
+                        </h3>
+                        <section className="mt-10 flex flex-col gap-y-10">
+                            {ResumeDetails.map((detail, index) => (
+                                <article
+                                    key={index}
+                                    className="flex flex-wrap justify-start items-start"
+                                >
+                                    <h4 className="w-1/5 text-csFadedWhite">{detail.title} -</h4>
+                                    <p className="w-4/5">{detail.content}</p>
+                                </article>
+                            ))}
+                        </section>
                     </article>
                 </motion.section>
             </section>

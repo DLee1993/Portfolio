@@ -22,7 +22,7 @@ export default function Footer() {
         },
     ];
     return (
-        <footer className="min-h-[50vh] customPadding text-sm pt-10 pb-24 md:py-20 border-t-2 border-csFadedWhite/10 mt-20">
+        <footer className="min-h-[50vh] md:min-h-[35vh] 2xl:min-h-[20vh] customPadding text-sm pt-10 pb-24 md:py-20 border-t-2 border-csFadedWhite/10 mt-20">
             <section className="w-full flex flex-col gap-y-10 md:flex-row justify-between items-start">
                 <article className="max-w-md flex flex-col">
                     {pathname !== "/contact" ? (
