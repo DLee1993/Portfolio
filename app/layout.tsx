@@ -24,7 +24,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.webp" />
             </head>
             <Scroll />
-            <body className="relative min-h-screen flex flex-col justify-between">
+            <body className="relative min-h-screen flex flex-col justify-between antialiased">
                 <div className="absolute -z-50 top-0 left-0 w-full h-screen bg-gradient-to-b md:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-csWhite/10 via-csBlack/10 to-csBlack bg-no-repeat"></div>
                 <FloatingNav />
                 <Header />
