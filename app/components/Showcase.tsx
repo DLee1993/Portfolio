@@ -7,7 +7,10 @@ export default function Showcase() {
     return (
         <ul className="space-y-10 md:space-y-20">
             {projects.map((project, index) => (
-                <li key={`project-${0 + index}`} className="w-full md:w-11/12 max-w-4xl mx-auto group">
+                <li
+                    key={`project-${0 + index}`}
+                    className="w-full md:w-11/12 max-w-4xl mx-auto group"
+                >
                     <Link
                         href={project.href}
                         target="_blank"
@@ -24,25 +27,23 @@ export default function Showcase() {
                                     index === 0
                                         ? "from-csGreen/75"
                                         : index === 1
-                                        ? "from-csPurple/50"
+                                        ? "from-csPurple/40"
                                         : index === 2
                                         ? "from-csBlue/85"
-                                        : index === 3
-                                        ? "from-csRed/20"
-                                        : "from-csOrange/30"
+                                        : "from-csOrange/25"
                                 } to-csBlack/10 rounded-xl md:rounded-3xl md:opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-all duration-500`}
                             ></div>
                             <section className="relative z-50 flex justify-between items-start mb-10 px-2 sm:px-5 md:px-10">
                                 <article>
-                                    <h2 className="text-xl font-semibold tracking-tighter">
+                                    <h2 className="text-xl font-semibold tracking-tight">
                                         {project.title}
                                     </h2>
-                                    <p className="text-sm text-csFadedWhite tracking-tighter mb-4">
+                                    <p className="text-sm text-csFadedWhite tracking-tight mb-4">
                                         {project.content}
                                     </p>
-                                    <ul className="flex flex-wrap gap-x-4 text-sm tracking-tighter">
+                                    <ul className="flex flex-wrap gap-2 text-sm tracking-tight">
                                         {project.tags.map((tag, index) => (
-                                            <li key={index}>{tag}</li>
+                                            <li key={index} className="bg-csFadedWhite/5 py-1 px-2 border-2 border-csWhite/5 rounded-md">{tag}</li>
                                         ))}
                                     </ul>
                                 </article>
