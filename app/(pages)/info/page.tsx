@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 
 export default function Page() {
     const [tab, setTab] = useState<number>(1);
@@ -16,23 +18,40 @@ export default function Page() {
             content: "David Lee",
         },
         {
-            title: "Position",
+            title: "position",
             content: "Frontend Developer",
         },
         {
-            title: "About me",
+            title: "about me",
             content:
-                "Detail oriented and driven developer that builds responsive modern looking websites. Eager to learn in a fast-paced environment for professional and personal improvement. Looking for opportunity where I can challenge myself and grow in my skills to create quality solutions.",
+                "Detail-oriented and motivated developer who creates responsive modern websites. Eager to learn in a fast-paced setting for professional and personal development. I'm looking for an opportunity to push myself and improve my ability to produce high-quality, robust solutions.",
         },
         {
-            title: "Projects",
-            content: "",
+            title: "experience",
+            content: "view projects",
         },
         {
-            title: "Tech Stack",
-            content: "",
+            title: "tech stack",
+            content: [
+                "Next.js",
+                "React",
+                "Express",
+                "MongoDB",
+                "Tailwind css",
+                "React aria",
+                "Shadcn-ui",
+                "Mantine ui",
+            ],
         },
-    ];
+        {
+            title: "languages",
+            content: ["HTML", "CSS", "Javascript"],
+        },
+        {
+            title: "tools",
+            content: ["Typescript", "Github", "Node js", "Npm", "Postman", "Figma"],
+        },
+    ] as const;
 
     return (
         <section className="relative flex flex-col md:flex-row gap-y-4 md:gap-x-10">
@@ -78,8 +97,8 @@ export default function Page() {
                             expanding my knowledge and understanding of the key technologies in web
                             development. Having a deeper understanding of the these technologies has
                             helped me to integrate and use the current technologies more
-                            efficiently. My current technologies is use are React, NextJs, Tailwind
-                            CSS, ShadcnUI, and Typescript.
+                            efficiently. The current technologies I use to build are React, NextJs,
+                            Tailwind CSS, ShadcnUI, and Typescript.
                         </p>
                         <br />
                         <p className="text-csWhite/75">
@@ -105,8 +124,28 @@ export default function Page() {
                                     key={index}
                                     className="flex flex-wrap justify-start items-start"
                                 >
-                                    <h4 className="w-1/5 text-csFadedWhite">{detail.title} -</h4>
-                                    <p className="w-4/5">{detail.content}</p>
+                                    <h4 className="w-1/5 text-csFadedWhite capitalize">
+                                        {detail.title}
+                                    </h4>
+                                    {detail.title === "experience" ? (
+                                        <Link
+                                            href="https://github.com/DLee1993"
+                                            target="_blank"
+                                            className="underline"
+                                        >
+                                            view all
+                                        </Link>
+                                    ) : detail.title === "tech stack" ||
+                                      detail.title === "languages" ||
+                                      detail.title === "tools" ? (
+                                        <ul className="space-y-2">
+                                            {detail.content.map((item) => (
+                                                <li key={item}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    ) : (
+                                        <p className="w-4/5">{detail.content}</p>
+                                    )}
                                 </article>
                             ))}
                         </section>
